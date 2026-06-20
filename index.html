@@ -4,87 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.D. Coaching | Allenamenti Individuali di Calcio</title>
+    
+    <!-- FAVICON -->
     <link rel="icon" type="image/png" href="AD.png">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="AD.png">
+
+    <!-- GOOGLE FONTS (Font moderno, geometrico e leggibilissimo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="bg-gradient"></div>
-    <div class="glow-1"></div>
-    <div class="glow-2"></div>
-
-    <header>
-        <img src="AD.png" class="logo" alt="A.D. Coaching Logo">
+    <!-- NAVIGAZIONE & MENU SUPERIORE -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="AD.png" class="logo" alt="A.D. Coaching">
+        </div>
+        <nav class="nav-menu">
+            <a href="#info">Informazioni</a>
+            <a href="#coach">Il Coach</a>
+            <a href="#prezzi">Prezzi</a>
+        </nav>
     </header>
 
     <main class="container">
 
-        <section class="hero-section">
-            <h1>Allenamenti Individuali <br><span class="text-gradient">di Calcio</span></h1>
-            <p>Migliora tecnica, velocità e prestazioni con un percorso personalizzato basato sui tuoi obiettivi strutturato da professionisti.</p>
+        <!-- SEZIONE HERO -->
+        <section class="hero-section" id="info">
+            <div class="badge">Performance & Crescita</div>
+            <h1>Allenamenti Individuali <br><span class="text-highlight">di Calcio</span></h1>
+            <p>Migliora ogni aspetto del tuo gioco con sessioni personalizzate basate sui tuoi obiettivi. Allenati con un percorso strutturato da professionisti a Roma.</p>
             
             <div class="hero-buttons">
                 <a href="#contatti" class="btn btn-primary">Contattaci</a>
             </div>
             
+            <!-- Link Instagram con l'icona ig.png affianco -->
             <a href="https://www.instagram.com/a.d._coaching" target="_blank" class="instagram-hero-link">
-                📸 Seguici su Instagram: @a.d._coaching
+                <img src="ig.png" alt="IG" class="ig-icon">
+                Seguici su Instagram: <span class="username">@a.d._coaching</span>
             </a>
         </section>
 
+        <!-- GRIGLIA CONTENUTI -->
         <div class="content-grid">
             
-            <div class="card card-profile">
-                <div class="card-tag">Il Coach</div>
+            <!-- SEZIONE: IL COACH -->
+            <div class="card" id="coach">
+                <div class="card-tag">L'Allenatore</div>
                 <h2>Daniele Albano</h2>
                 <p class="subtitle">Classe 2005 – Allenatore & Match Analyst</p>
-                <p class="description">Specializzato nello sviluppo individuale del giocatore tramite analisi video e metabolica.</p>
+                <p class="description">Specializzato nello sviluppo individuale del giocatore tramite l'analisi dei dettagli tecnici e l'ottimizzazione atletica della performance.</p>
+                
+                <!-- Lista Patentini Corretta -->
                 <ul class="features-list">
-                    <li><span>⚽</span> Grassroots Level E</li>
-                    <li><span>⚽</span> Grassroots Level E Beach Soccer</li>
-                    <li><span>🏖️</span> Licenza B Beach Soccer</li>
-                    <li><span>📊</span> Match Analyst LiveTag Pro</li>
-                    <li><span>🔎</span> Osservatore Calcistico LiveTag Pro</li>
+                    <li><span class="dot"></span> Grassroots level E</li>
+                    <li><span class="dot"></span> Grassroots level E beach soccer</li>
+                    <li><span class="dot"></span> Licenza B beach soccer</li>
+                    <li><span class="dot"></span> Match analyst live tag pro</li>
+                    <li><span class="dot"></span> Osservatore calcistico live tag pro</li>
                 </ul>
             </div>
 
-            <div class="card card-skills">
-                <div class="card-tag">Focus</div>
+            <!-- SEZIONE: COSA ALLENIAMO -->
+            <div class="card">
+                <div class="card-tag">Il Metodo</div>
                 <h2>Cosa Alleniamo</h2>
-                <p class="description">Ogni sessione è focalizzata sul perfezionamento dei fondamentali calcistici e atletici.</p>
+                <p class="description">Un programma completo focalizzato sul perfezionamento dei fondamentali calcistici, atletici e cognitivi.</p>
+                
                 <div class="tags-container">
                     <span class="tag">Tecnica</span>
                     <span class="tag">Dribbling</span>
-                    <span class="tag">Forza fisica</span>
+                    <span class="tag">Forza Fisica</span>
                     <span class="tag">Resistenza</span>
-                    <span class="tag">Velocità di pensiero</span>
+                    <span class="tag">Velocità di Pensiero</span>
                     <span class="tag">Agilità</span>
                     <span class="tag">Lucidità</span>
                     <span class="tag">Esplosività</span>
                 </div>
             </div>
 
-            <div class="card card-pricing">
-                <div class="card-tag">Investimento</div>
-                <h2>Tariffe Trasparenti</h2>
+            <!-- SEZIONE: PREZZI -->
+            <div class="card" id="prezzi">
+                <div class="card-tag">Trasparenza</div>
+                <h2>I Nostri Prezzi</h2>
+                <p class="description">Scegli la durata della sessione singola sul campo. Tutto incluso.</p>
+                
                 <div class="price-row">
                     <div class="price-box">
-                        <span class="price-time">1 Ora</span>
-                        <span class="price-amount">€20</span>
+                        <span class="price-time">Sessione 1 Ora</span>
+                        <span class="price-amount">20€</span>
                     </div>
                     <div class="price-box featured-price">
-                        <span class="price-time">2 Ore</span>
-                        <span class="price-amount">€35</span>
+                        <span class="price-time">Sessione 2 Ore</span>
+                        <span class="price-amount">35€</span>
                         <span class="save-badge">Consigliato</span>
                     </div>
                 </div>
             </div>
 
-            <div class="card card-contact" id="contatti">
-                <div class="card-tag">Inizia Oggi</div>
-                <h2>Sei pronto a scendere in campo?</h2>
-                <p class="description">Scegli il giorno e l'orario. Risposta rapida su WhatsApp.</p>
+            <!-- SEZIONE: CONTATTI / AIUTO -->
+            <div class="card" id="contatti">
+                <div class="card-tag">Supporto & Prenotazioni</div>
+                <h2>Hai bisogno di aiuto?</h2>
+                <p class="description">Chiedi informazioni sui giorni disponibili, orari o pianificazione degli allenamenti. Risposta rapida.</p>
                 
                 <button class="btn btn-whatsapp" id="openPopupBtn">
                     <svg viewBox="0 0 24 24" class="icon-whatsapp"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 11.948 0c3.179.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.907-11.893 11.907-2.006-.001-3.973-.51-5.731-1.484L0 24zm6.59-4.846c1.657.983 3.413 1.5 5.291 1.501 5.429 0 9.846-4.414 9.849-9.842.002-2.63-1.023-5.101-2.886-6.964C16.98 2.025 14.51 1 11.95 1 6.522 1 2.105 5.414 2.102 10.842c-.001 1.81.474 3.58 1.378 5.161l-.944 3.449 3.511-.918z" fill="currentColor"/></svg>
@@ -92,27 +115,32 @@
                 </button>
 
                 <a href="https://www.instagram.com/a.d._coaching" target="_blank" class="instagram-contact-link">
-                    Seguici su Instagram
+                    <img src="ig.png" alt="IG" class="ig-icon-small">
+                    Scrivici su Instagram
                 </a>
             </div>
 
         </div>
 
-        <div class="footer-location">
-            📍 Roma - Associazione Polisportiva Pian Due Torri
-        </div>
+        <!-- LUOGO IN FONDO -->
+        <footer class="footer-location">
+            📍 Roma - Pian Due Torri
+        </footer>
     </main>
 
+    <!-- FINESTRELLA POPUP WHATSAPP (Stile Light coordinato) -->
     <div class="popup-overlay" id="whatsappPopup">
         <div class="popup-box">
             <button class="close-popup-btn" id="closePopupBtn">&times;</button>
             <div class="popup-header">
                 <h3>Contatta Daniele Albano</h3>
+                <p>Risposta diretta</p>
             </div>
             <div class="popup-body">
-                <p>Numero di telefono:</p>
-                <p class="phone-number">+39 349 388 8233</p> 
-                <p class="popup-tip">Clicca il tasto sotto per avviare direttamente la chat su WhatsApp.</p>
+                <div class="phone-badge">
+                    <span class="phone-label">NUMERO DI TELEFONO</span>
+                    <p class="phone-number">+39 349 388 8233</p> <!-- Sostituisci col vero numero -->
+                </div>
                 <a href="https://wa.me/393493888233" target="_blank" class="btn btn-whatsapp-direct">
                     Apri Chat WhatsApp
                 </a>
@@ -120,28 +148,19 @@
         </div>
     </div>
 
+    <!-- SCRIPT POPUP -->
     <script>
         const popup = document.getElementById('whatsappPopup');
         const openBtn = document.getElementById('openPopupBtn');
         const closeBtn = document.getElementById('closePopupBtn');
 
-        // Mostra il popup al click del tasto contatti
         openBtn.addEventListener('click', (e) => {
             e.preventDefault();
             popup.classList.add('active');
         });
 
-        // Chiudi il popup al click della "X"
-        closeBtn.addEventListener('click', () => {
-            popup.classList.remove('active');
-        });
-
-        // Chiudi il popup se si clicca fuori dalla finestrella nera
-        popup.addEventListener('click', (e) => {
-            if(e.target === popup) {
-                popup.classList.remove('active');
-            }
-        });
+        closeBtn.addEventListener('click', () => popup.classList.remove('active'));
+        popup.addEventListener('click', (e) => { if(e.target === popup) popup.classList.remove('active'); });
     </script>
 
 </body>
